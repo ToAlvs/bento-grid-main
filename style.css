@@ -1,0 +1,219 @@
+html {
+    font-family: "Dm Sans", serif;
+}
+:root {
+    --purple-100: hsl(254, 88%, 90%);
+    --purple-500: hsl(256, 67%, 59%);
+    --yellow-100: hsl(31, 66%, 93%);
+    --yellow-500: hsl(39, 100%, 71%);
+    --white: hsl(0, 0%, 100%);
+}
+main {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.container {
+
+    display: grid;
+    grid-template-areas: "coluna1 review review schedule"
+        "coluna1 manage consistent schedule"
+        "coluna1 faster-growth grow-followers grow-followers";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 200px 250px;
+    max-width: 900px;
+    /* max-height: 800px; */
+    gap: 20px;
+    padding: 10px;
+}
+
+.coluna1 {
+    grid-area: coluna1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+
+.create-post {
+    grid-area: create-post;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    font-size: 32px;
+    background-color: var(--yellow-100);
+    padding: 0px 20px;
+    border-radius: 10px;
+    letter-spacing: -2px;
+    line-height: 30px;
+    height: 350px;
+}
+
+.create-post span {
+    color: var(--purple-500);
+    font-style: italic;
+}
+
+.review {
+    grid-area: review;
+    background-color: var(--purple-500);
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.review .dez {
+    color:var(--yellow-500);
+}
+
+.review p {
+    font-size: 44px;
+    font-weight: 500;
+    color:var(--white);
+}
+
+.review .faster {
+    font-style: italic;
+}
+
+.review img {
+    width: 150px;
+}
+
+.review .stars {
+    color:var(--white);
+    font-weight: 200;
+}
+
+.schedule {
+    grid-area: schedule;
+    background-color: var(--purple-100);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.schedule h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.schedule img {
+    transform: scale(1.8);
+    margin-left: 70px;
+}
+
+.ai {
+    grid-area: ai;
+    background-color: var(--yellow-500);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: -2px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 370px;
+}
+
+.manage {
+    grid-area: manage;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.manage img {
+    transform: scale(1.5);
+    margin-left: 43px;
+}
+
+.consistent {
+    grid-area: consistent;
+    background-color:var(--yellow-500);
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -1px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.consistent p {
+    margin-bottom: 10px;
+}
+
+.faster-growth {
+    grid-area: faster-growth;
+    background-color: var(--white);
+    border-radius: 10px;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-self: center;
+    align-self: center;
+}
+
+.faster-growth h3 {
+    font-size: 46px;
+    font-weight: 500;
+}
+
+.faster-growth img {
+    width: 150px;
+}
+
+.grow-followers {
+    grid-area: grow-followers;
+    background-color: var(--purple-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: var(--white);
+    letter-spacing: -1px;
+    line-height: 30px;
+}
+
+.grow-followers img {
+    width: 190px;
+}
+
+img {
+    width: 100%;
+}

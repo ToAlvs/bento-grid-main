@@ -1,0 +1,59 @@
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 100vh; */
+    }
+
+    .consistent{
+        height: 230px;
+        img{
+            width: 230px;
+        }
+
+    }
+
+    .create-post{
+        height: 200px;
+        align-items: flex-start;
+        img{
+            width: 170px;
+        }
+    }
+
+    .ai{
+        height: 330px;
+        align-items: flex-start;
+        img{
+            width: 200px;
+        }
+    }
+
+    .manage{
+        height: 200px;
+        img{
+            transform: scale(1.0);
+            margin-left: 0;
+        }
+    }
+
+    .schedule{
+        gap: 20px;
+        img{
+            transform: scale(1.0);
+            margin-left: 0;
+        }
+    }
+
+    .grow-followers{
+        flex-direction: column;
+        p{
+            text-align: center;
+            padding: 20px 60px 10px;
+        }
+        img{
+            width: 200px;
+        }
+    }
+}
